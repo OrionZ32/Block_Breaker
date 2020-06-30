@@ -357,18 +357,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0021252632, y: -0.0042510033}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0666667, y: 1.0666667}
+    oldSize: {x: 0.53333336, y: 0.53333336}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0666667, y: 1.0666667}
+  m_Size: {x: 0.5353708, y: 0.54812145}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -748,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733574728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.74, y: 0.25, z: 0}
+  m_LocalPosition: {x: 8, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -826,6 +826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
+  minX: 1
+  maxX: 15
 --- !u!1 &2029810313
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +840,7 @@ GameObject:
   - component: {fileID: 2029810314}
   - component: {fileID: 2029810317}
   - component: {fileID: 2029810316}
+  - component: {fileID: 2029810318}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -903,7 +906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029810313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 4.25, z: 0}
+  m_LocalPosition: {x: 8, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -946,3 +949,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2029810318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029810313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd422ff3a549eb47bde486fc9c5e546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 1733574733}
